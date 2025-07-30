@@ -1,0 +1,30 @@
+@use "tailwindcss";
+@use "./tokens";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 1440px;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  font-size: tokens.$fs-18;
+  background-color: tokens.$neutral-900;
+  color: tokens.$neutral-0;
+  padding: tokens.$sp-20;
+}
+
+p {
+  font-size: tokens.$fs-16;
+}
+
+main {
+  min-height: 100vh;
+}
