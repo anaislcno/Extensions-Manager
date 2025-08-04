@@ -13,6 +13,7 @@ export default {
           600: "hsl(226, 11%, 37%)",
           700: "hsl(225, 23%, 24%)",
           800: "hsl(224, 26%, 16%)",
+          // J'ai changé le putain de hsl mais il s'en tappe
           900: "hsl(227, 75%, 14%)",
         },
         red: {

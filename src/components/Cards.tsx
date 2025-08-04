@@ -22,18 +22,18 @@ const Cards = ({ activeFilter }: CardsProps) => {
       {filteredDatas.map((data: Card) => (
         <div
           key={data.id}
-          className="container flex flex-col items-start justify-between min-h-[194px] gap-[12px] rounded-2xl border border-neutral-300 bg-neutral-100 p-[16px] md:max-w-[380px] dark:border-neutral-600 dark:bg-neutral-800"
+          className="container flex h-fit min-h-[194px] flex-col items-start justify-between gap-[12px] rounded-2xl border-2 border-neutral-200 bg-white p-[16px] shadow-[1px_1px_15px_0px_hsl(217,61%,90%)] md:max-w-[380px] dark:border-1 dark:border-neutral-600 dark:bg-neutral-800 dark:shadow-none"
         >
           <div className="flex items-start gap-[12px]">
             <img src={data.logo} />
             <div className="flex flex-col items-start gap-[6px]">
               <h3 className="text-xl">{data.name}</h3>
-              <p className="font-normal text-base">{data.description}</p>
+              <p className="text-base font-normal">{data.description}</p>
             </div>
           </div>
           <div className="flex w-full items-center justify-between gap-[8px]">
             <button
-              className="text-sm cursor-pointer rounded-4xl border border-neutral-600 px-[12px] py-[8px] font-normal transition-colors duration-300 hover:bg-neutral-600"
+              className="cursor-pointer rounded-4xl border border-neutral-400 px-[12px] py-[8px] text-sm font-normal transition-colors duration-300 hover:bg-neutral-600"
               onClick={() => handleRemove(data.id)}
             >
               Remove
