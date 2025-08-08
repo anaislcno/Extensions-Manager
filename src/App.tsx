@@ -11,8 +11,8 @@ function App() {
       <Header />
       <Filters activeFilter={activeFilter} setActiveFilter={setActiveFilter} />
       <Cards activeFilter={activeFilter} />
-      <div className="group fixed right-[14px] bottom-[14px] cursor-pointer rounded-full transition-all duration-300">
-        <div className="invisible absolute -top-[12px] right-10 w-[220px] rounded-md bg-neutral-400 p-2 text-sm font-normal text-white opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 dark:bg-neutral-800">
+      <div className="group fixed right-14 bottom-14 cursor-pointer rounded-full transition-all duration-300">
+        <div className="invisible absolute -top-12 right-36 w-[220px] rounded-md bg-neutral-400 p-2 text-sm font-normal text-white opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100 dark:bg-neutral-800">
           Challenge by{" "}
           <a
             className="underline hover:text-neutral-300"
