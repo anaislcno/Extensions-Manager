@@ -33,7 +33,10 @@ function App() {
           </a>
           .
         </div>
-        <button className="flex cursor-pointer items-center justify-center rounded-full bg-white px-2 py-1 text-lg text-neutral-800 shadow-[1px_1px_15px_0px_hsl(217,61%,90%)] transition-colors duration-300 group-hover:bg-neutral-400 group-hover:text-white dark:bg-neutral-600 dark:text-white dark:shadow-none dark:group-hover:bg-neutral-800">
+        <button
+          className="flex cursor-pointer items-center justify-center rounded-full bg-white px-2 py-1 text-lg text-neutral-800 shadow-[1px_1px_15px_0px_hsl(217,61%,90%)] transition-colors duration-300 group-hover:bg-neutral-400 group-hover:text-white dark:bg-neutral-600 dark:text-white dark:shadow-none dark:group-hover:bg-neutral-800"
+          type="button"
+        >
           ⓘ
         </button>
       </div>

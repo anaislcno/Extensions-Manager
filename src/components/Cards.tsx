@@ -25,7 +25,7 @@ const Cards = ({ activeFilter }: CardsProps) => {
           className="container flex h-fit min-h-[194px] flex-col items-start justify-between gap-12 rounded-2xl border-2 border-neutral-200 bg-white p-16 shadow-[1px_1px_15px_0px_hsl(217,61%,90%)] md:max-w-[380px] dark:border-1 dark:border-neutral-600 dark:bg-neutral-800 dark:shadow-none"
         >
           <div className="flex items-start gap-12">
-            <img src={data.logo} />
+            <img src={data.logo} alt="" />
             <div className="flex flex-col items-start gap-6">
               <h3 className="text-xl">{data.name}</h3>
               <p className="text-base font-normal">{data.description}</p>
@@ -35,6 +35,7 @@ const Cards = ({ activeFilter }: CardsProps) => {
             <button
               className="cursor-pointer rounded-4xl border border-neutral-400 px-12 py-8 text-sm font-normal transition-colors duration-300 hover:bg-neutral-400 hover:text-white dark:hover:bg-neutral-600"
               onClick={() => handleRemove(data.id)}
+              type="button"
             >
               Remove
             </button>

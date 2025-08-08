@@ -15,18 +15,21 @@ const Filters = ({ activeFilter, setActiveFilter }: FiltersProps) => {
         <button
           className={`${baseBtn} ${activeFilter === "all" ? activeBtn : inactiveBtn}`}
           onClick={() => setActiveFilter("all")}
+          type="button"
         >
           All
         </button>
         <button
           className={`${baseBtn} ${activeFilter === "active" ? activeBtn : inactiveBtn}`}
           onClick={() => setActiveFilter("active")}
+          type="button"
         >
           Active
         </button>
         <button
           className={`${baseBtn} ${activeFilter === "inactive" ? activeBtn : inactiveBtn}`}
           onClick={() => setActiveFilter("inactive")}
+          type="button"
         >
           Inactive
         </button>

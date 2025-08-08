@@ -42,11 +42,12 @@ const Header = () => {
       <button
         className="cursor-pointer rounded-xl bg-neutral-100 p-12 transition-colors duration-300 hover:bg-neutral-300 dark:bg-neutral-700 dark:hover:bg-neutral-600"
         onClick={() => darkModeHandler()}
+        type="button"
       >
         {dark ? (
-          <img src={sun} alt="Logo" className="h-24 w-auto" />
+          <img src={sun} alt="Sun image" className="h-24 w-auto" />
         ) : (
-          <img src={moon} alt="Logo" className="h-24 w-auto" />
+          <img src={moon} alt="Moon image" className="h-24 w-auto" />
         )}
       </button>
     </div>
